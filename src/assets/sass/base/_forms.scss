@@ -1,0 +1,23 @@
+.form-control {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #DADADA;
+  padding-left: 0;
+  font-size: $text-md;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $purple;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $purple;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $purple;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $purple;
+  }
+}
+
+

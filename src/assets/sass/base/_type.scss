@@ -1,0 +1,56 @@
+// @font-face {
+//   font-family: 'Mrs Eaves';
+//   src: url('../fonts/mrseaves.eot');
+//   src: url('../fonts/mrseaves.eot?#iefix') format('embedded-opentype'),
+//        url('../fonts/mrseaves.woff') format('woff'),
+//        url('../fonts/mrseaves.woff2') format('woff2');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// .font-weight-bold,
+// strong {
+//   font-weight: normal;
+//   font-family: 'NationalMedium';
+// }
+
+// .font-weight-light {
+//   font-weight: normal;
+//   font-family: 'NationalLight';
+// }
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+  line-height: 1.3;
+}
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-md {
+  font-size: $text-md;
+}
+
+.text-lg {
+  font-size: $text-lg;
+  line-height: 1.2;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+.text-white {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #fff;
+  }
+}

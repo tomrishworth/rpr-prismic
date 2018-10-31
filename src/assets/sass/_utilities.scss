@@ -1,0 +1,105 @@
+// Containers
+
+.container-xs {
+  max-width: 450px;
+}
+
+.container-sm {
+  max-width: 520px;
+}
+
+.container-md {
+  @include media-breakpoint-up(lg) {
+    max-width: 1020px;
+  }
+}
+
+.container-lg {
+  max-width: 1180px;
+}
+
+// Colors
+
+.bg-light {
+  background: $bg-light;
+}
+
+.bg-dark {
+  background: $bg-dark;
+}
+
+.text-dark {
+  color: $text-dark;
+}
+
+.text-body {
+  color: $body-color;
+}
+
+.text-grey {
+  color: $gray-light;
+}
+
+.text-subtle {
+  color: $text-subtle;
+}
+
+// Borders
+
+.border {
+  border: 1px solid $border-light;
+}
+
+.border-top {
+  border-top: 1px solid $border-light;
+}
+
+.border-right {
+  border-right: 1px solid $border-light;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-light;
+}
+
+.border-left {
+  border-left: 1px solid $border-light;
+}
+
+.border-alt {
+  border-color: #dfe6ec;
+}
+
+.flex-auto {
+  flex: auto
+}
+
+.flex-shrink-none {
+  flex-shrink: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.line-white {
+  background: #fff;
+  width: 50px;
+  height: 2px;
+}
+
+.line-blue {
+  background: $blue;
+  width: 40px;
+  height: 3px;
+}
+
+.line-align {
+  margin-top: 12px;
+}
+
+.line-align-sm {
+  margin-top: 6px;
+}

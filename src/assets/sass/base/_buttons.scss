@@ -1,0 +1,15 @@
+.btn-white {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $blue-dark;
+  border-color: $blue-dark;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
+}

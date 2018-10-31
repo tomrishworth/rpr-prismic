@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Sumana:400,700");
+
+@import "variable-overrides";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/aos/src/sass/aos";
+
+@import "custom-variables";
+
+@import "base/animations.scss";
+@import "base/buttons.scss";
+@import "base/forms.scss";
+@import "base/type.scss";
+
+@import "components/header.scss";
+@import "components/section.scss";
+
+@import "utilities";
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.intro {
+  height: calc(100vh - 100px);
+  min-height: 700px;
+  background-image: url("./assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.intro-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slant-top {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0;
+    z-index: -1;
+  }
+}
+
+.slant-bottom {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 80px;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0;
+    z-index: -1;
+  }
+}
+
+.down-arrow {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  transition: transform 300ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  img {
+    position: relative;
+    top: 3px;
+  }
+}

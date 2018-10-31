@@ -1,0 +1,51 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  @include media-breakpoint-up(sm) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.section-dark {
+  background-color: #4c304d;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #fff;
+}
+
+.section-grey {
+  background-color: #f6f6f6;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.section-white {
+  color: #fff;
+  background-size: cover;
+}
+
+.section-services {
+  background-image: url("./assets/images/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  padding-top: 200px;
+  color: #fff;
+  p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #fff;
+  }
+  h3 {
+    font-size: $text-md;
+    margin-bottom: 15px;
+  }
+}
