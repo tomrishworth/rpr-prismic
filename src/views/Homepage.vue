@@ -127,8 +127,7 @@
           <div class="col-lg-6">
             <div class="mb-3">
               <div class="text-xs text-uppercase text-muted mb-1">Phone</div>
-              <div>Mobile: {{fields.contactMobileNumber}}</div>
-              <div>Office: {{fields.contactOfficeNumber}}</div>
+              <div>{{fields.contactMobileNumber}}</div>
             </div>
             <div class="mb-2">
               <div class="text-xs text-uppercase text-muted mb-1">Email</div> <a class="text-body"
